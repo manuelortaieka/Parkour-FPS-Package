@@ -40,7 +40,6 @@ public class InteractionArea : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         EndInteraction();
-
     }
 
     void EndInteraction()
