@@ -7,18 +7,17 @@ public class InteractionArea : MonoBehaviour
     public GameObject UIInteractionMessage;
     public bool canInteract;
     public MercaderiaScript mercaderia;
-
-    private void start()
+    
+    void Start()
     {
         UIInteractionMessage.SetActive(false);
-        EndInteraction();
     }
-    
-    private void update()
+
+    void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            if(canInteract)
+            if (canInteract)
             {
                 Destroy(mercaderia.gameObject);
                 EndInteraction();
@@ -26,29 +25,28 @@ public class InteractionArea : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
+        // Debug.Log(other.gameObject.name);
         mercaderia = other.GetComponent<MercaderiaScript>();
         if (mercaderia)
         {
             UIInteractionMessage.SetActive(true);
             canInteract = true;
-        }   
+        }
+
     }
 
-     private void OnTriggerExit()
+    void OnTriggerExit(Collider other)
     {
         EndInteraction();
+
     }
-    
+
     void EndInteraction()
     {
+        UIInteractionMessage.SetActive(false);
         mercaderia = null;
         canInteract = false;
-        UIInteractionMessage.SetActive(false);
     }
-
 }
-
-
