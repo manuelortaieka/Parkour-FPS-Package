@@ -6,7 +6,7 @@ public class InteractionArea : MonoBehaviour
 {
     public GameObject UIInteractionMessage;
     public bool canInteract;
-    public MercaderiaScript mercaderia;
+    public InteractionObjects mercaderia;
     
     void Start()
     {
@@ -28,7 +28,7 @@ public class InteractionArea : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // Debug.Log(other.gameObject.name);
-        mercaderia = other.GetComponent<MercaderiaScript>();
+        mercaderia = other.GetComponent<InteractionObjects>();
         if (mercaderia)
         {
             UIInteractionMessage.SetActive(true);
