@@ -5,18 +5,18 @@ ModelImporter:
   fileIDToRecycleName:
     100000: columna
     100002: //RootNode
-    100004: tablas
+    100004: tablas.010
     400000: columna
     400002: //RootNode
-    400004: tablas
+    400004: tablas.010
     2100000: madera tablas
     2100002: madera palo
     2300000: columna
-    2300002: tablas
+    2300002: tablas.010
     3300000: columna
-    3300002: tablas
+    3300002: tablas.010
     4300000: columna
-    4300002: tablas
+    4300002: tablas.010
   externalObjects: {}
   materials:
     importMaterials: 1
