@@ -12834,6 +12834,8 @@ MonoBehaviour:
   UIInteractionMessage: {fileID: 1223685680}
   canInteract: 0
   mercaderia: {fileID: 0}
+  scoreManager: {fileID: 0}
+  puntos: 15
 --- !u!1001 &1273720869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14208,7 +14210,7 @@ Transform:
   m_GameObject: {fileID: 1386101374}
   m_LocalRotation: {x: -0.73990905, y: -0, z: -0, w: 0.6727069}
   m_LocalPosition: {x: -2.77, y: -1.2, z: 21.98}
-  m_LocalScale: {x: 1.7384968, y: 4.8252015, z: 2.5343518}
+  m_LocalScale: {x: 1.2050564, y: 4.8252015, z: 2.5343518}
   m_Children: []
   m_Father: {fileID: 1205729912}
   m_RootOrder: 1
